@@ -1,0 +1,23 @@
+.content {
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 50px;
+  background: #f5f5f5;
+  width: 100%;
+}
+.content .content-left,
+.content .content-right {
+  height: 100%;
+  position: relative;
+}
+.content .content-left {
+  width: 80px;
+  float: left;
+  background-color: pink;
+}
+.content .content-right {
+  margin-left: 90px;
+  background-color: gray;
+}
+/*# sourceMappingURL=category.css.map */
