@@ -1,0 +1,87 @@
+.nav-links {
+  padding: 10px;
+  width: 100%;
+}
+.nav-links a {
+  float: left;
+  width: 33.333%;
+}
+.nav-links a > img {
+  width: 100%;
+  display: block;
+}
+.brand {
+  padding: 0 10px;
+}
+.brand img {
+  width: 100%;
+}
+.brand ul {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.brand ul > li {
+  float: left;
+  width: 25%;
+}
+.brand ul > li > img {
+  width: 100%;
+}
+.product {
+  padding: 10px;
+}
+.product > img {
+  width: 100%;
+}
+.product > ul {
+  padding: 6px 0;
+}
+.product > ul li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+.product > ul li > a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+  text-align: center;
+}
+.product > ul li > a > img {
+  width: 100%;
+}
+.product > ul li > a > span {
+  display: block;
+  color: #8f8f94;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  height: 38px;
+  overflow: hidden;
+  padding: 5px;
+}
+.product > ul li > a > p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #8f8f94;
+}
+.product > ul li > a > p > span:first-of-type {
+  color: #f20;
+  padding-right: 6px;
+}
+.product > ul li > a > p > span:last-of-type {
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+.product > ul li > a .buy-now {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #006699;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto 5px auto;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=index.css.map */

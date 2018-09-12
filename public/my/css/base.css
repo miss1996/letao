@@ -1,0 +1,25 @@
+  /*公共样式*/
+  *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+  }
+  .my-banner {
+      background-color: #006699;
+  }
+  .my-banner h1 {
+      color:#fff;
+  }
+  .my-banner a {
+      color:#fff;
+  }
+  .my-footer {
+      background-color: #006699;
+  }
+  .my-footer .mui-tab-item {
+      color:#fff;
+  }
+  .mui-bar-tab .mui-tab-item.mui-active {
+      color:darkorange;
+  }
