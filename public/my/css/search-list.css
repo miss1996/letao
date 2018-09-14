@@ -1,0 +1,76 @@
+body {
+  background-color: #fff;
+  position: relative;
+}
+body .content {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  bottom: 50px;
+}
+body .content .metre {
+  width: 100%;
+  height: 40px;
+  background: #efeff4;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  line-height: 40px;
+}
+body .content .metre span {
+  font-size: 14px;
+}
+body .content .product {
+  padding: 6px 0;
+}
+body .content .product li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+body .content .product li > a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+  text-align: center;
+}
+body .content .product li > a > img {
+  width: 100%;
+}
+body .content .product li > a > span {
+  display: block;
+  color: #8f8f94;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  height: 38px;
+  overflow: hidden;
+  padding: 5px;
+}
+body .content .product li > a > p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #8f8f94;
+}
+body .content .product li > a > p > span:first-of-type {
+  color: #f20;
+  padding-right: 6px;
+}
+body .content .product li > a > p > span:last-of-type {
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+body .content .product li > a .buy-now {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #006699;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto 5px auto;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=search-list.css.map */
