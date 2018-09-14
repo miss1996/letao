@@ -3,7 +3,7 @@ $(function(){
     $('#grabble').on('click',function(){
         //获取用户输入的关键字
         var keyword =  $(this).siblings('input').val();
-        console.log(keyword);
+        //console.log(keyword);
         if(keyword){
             //将用户输入的关键字追加存储在数组中
             keyArr.push(keyword);
@@ -26,13 +26,11 @@ $(function(){
     if(localStorage.getItem('keyArr')){
         //在数据库中取出关键字
         keyArr = JSON.parse(localStorage.getItem('keyArr'));
-        console.log(keyArr);
+        //console.log(keyArr);
         var html = template('historyTpl',{result:keyArr});
-        console.log(html);
+        //console.log(html);
 
         $('#history-box').html(html);
-        // console.log(html);
-        // console.log(keyArr);
     }
 
     //实现清空历史

@@ -49,51 +49,51 @@
 					<span class="mui-icon mui-icon-arrowdown"></span>
 				</div>
 			</div>
-			<ul class="mui-clearfix product">
-				<li>
-					<a href="javascript:;">
-						<img src="images/product.jpg" alt="">
-						<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>
-						<p>
-							<span>¥560</span>
-							<span>¥888</span>
-						</p>
-						<span class="buy-now">立即购买</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src="images/product.jpg" alt="">
-						<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>
-						<p>
-							<span>¥560</span>
-							<span>¥888</span>
-						</p>
-						<span class="buy-now">立即购买</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src="images/product.jpg" alt="">
-						<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>
-						<p>
-							<span>¥560</span>
-							<span>¥888</span>
-						</p>
-						<span class="buy-now">立即购买</span>
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src="images/product.jpg" alt="">
-						<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>
-						<p>
-							<span>¥560</span>
-							<span>¥888</span>
-						</p>
-						<span class="buy-now">立即购买</span>
-					</a>
-				</li>
+			<ul class="mui-clearfix product" id="searchBox">
+				<!--<li>-->
+					<!--<a href="javascript:;">-->
+						<!--<img src="images/product.jpg" alt="">-->
+						<!--<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>-->
+						<!--<p>-->
+							<!--<span>¥560</span>-->
+							<!--<span>¥888</span>-->
+						<!--</p>-->
+						<!--<span class="buy-now">立即购买</span>-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<a href="javascript:;">-->
+						<!--<img src="images/product.jpg" alt="">-->
+						<!--<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>-->
+						<!--<p>-->
+							<!--<span>¥560</span>-->
+							<!--<span>¥888</span>-->
+						<!--</p>-->
+						<!--<span class="buy-now">立即购买</span>-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<a href="javascript:;">-->
+						<!--<img src="images/product.jpg" alt="">-->
+						<!--<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>-->
+						<!--<p>-->
+							<!--<span>¥560</span>-->
+							<!--<span>¥888</span>-->
+						<!--</p>-->
+						<!--<span class="buy-now">立即购买</span>-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<a href="javascript:;">-->
+						<!--<img src="{{$value.picAddr}}" alt="">-->
+						<!--<span>{{$value.proName}}</span>-->
+						<!--<p>-->
+							<!--<span>¥{{$value.price}}</span>-->
+							<!--<span>¥{{$value.oldPrice}}</span>-->
+						<!--</p>-->
+						<!--<span class="buy-now">立即购买</span>-->
+					<!--</a>-->
+				<!--</li>-->
 			</ul>
 		</div>
 	</div>
@@ -101,25 +101,16 @@
 	{{each data}}
 	<li>
 		<a href="javascript:;">
-			<img src="images/product.jpg" alt="">
-			<span>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</span>
+			<img src="{{$value.pic[0].picAddr}}" alt="">
+			<span>{{$value.proName}}</span>
 			<p>
-				<span>¥560</span>
-				<span>¥888</span>
+				<span>¥{{$value.price}}</span>
+				<span>¥{{$value.oldPrice}}</span>
 			</p>
 			<span class="buy-now">立即购买</span>
 		</a>
 	</li>
 	{{/each}}
-</script>
-<script>
-	$.ajax({
-		type:'get',
-		url:'/product/queryProduct',
-		success:function(result){
-		    console.log(result);
-		}
-	});
 </script>
 </body>
 </html>
