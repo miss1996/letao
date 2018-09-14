@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/search.css">
     <script src="assets/zepto/zepto.min.js"></script>
     <script src="assets/mui/js/mui.min.js"></script>
-    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="assets/artTemplate/template-web.js"></script>
     <script src="js/common.js"></script>
     <script src="js/search.js"></script>
 </head>
@@ -43,22 +43,23 @@
         <div class="container">
             <div class="search">
                 <input type="text" placeholder="请输入您喜欢的商品">
-                <input type="button" value="搜索">
+                <input type="button" value="搜索" id="grabble">
             </div>
             <div class="history mui-clearfix">
                 <span class="mui-pull-left">搜索历史</span>
-                <span class="icon_clear fa fa-trash mui-pull-right">清空历史</span>
+                <span class="icon_clear fa fa-trash mui-pull-right" id="clearBtn">清空历史</span>
             </div>
-            <ul class="mui-table-view">
-                <li class="mui-table-view-cell"></li>
-
+            <ul class="mui-table-view" id="history-box">
+                <!--<li class="mui-table-view-cell">Item 1</li>-->
+                <!--<li class="mui-table-view-cell">Item 2</li>-->
+                <!--<li class="mui-table-view-cell">Item 3</li>-->
             </ul>
         </div>
     </div>
 </div>
-<script type="text/html" id="historySearchTpl">
-    {{each data}}
-    <li class="mui-table-view-cell">{{$value.data[i]}}</li>
+<script type="text/html" id="historyTpl">
+    {{each result}}
+    <li class="mui-table-view-cell">{{$value}}</li>
     {{/each}}
 </script>
 </body>
