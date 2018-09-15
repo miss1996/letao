@@ -4,7 +4,7 @@ $(function(){
         //获取用户输入的关键字
         var keyword =  $(this).siblings('input').val();
         //console.log(keyword);
-        if(keyword){
+        if(keyword.trim()){
             //将用户输入的关键字追加存储在数组中
             keyArr.push(keyword);
             localStorage.setItem('keyArr',JSON.stringify(keyArr));
