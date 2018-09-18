@@ -10,36 +10,18 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/base.css">
     <script src="assets/zepto/zepto.min.js"></script>
-    <script src="assets/artTemplate/template-web.js"></script>
     <script src="assets/mui/js/mui.min.js"></script>
-    <script src="js/public.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/modify.js"></script>
     <style>
         .mui-bar{
             background-color: #006699;
-        }
-        .mui-content {
-            position: relative;
-        }
-        .mui-input-group {
-            font-size:14px;
-        }
-        .mui-input-group input {
-            font-size:14px;
-        }
-        #enroll {
-            position: absolute;
-            right: 10px;
-            top:175px;
-            font-size:14px;
-            color:#006699;
         }
     </style>
 </head>
 <body>
     <header class="mui-bar mui-bar-nav my-header">
     <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-    <h1 class="mui-title">用户登录</h1>
+    <h1 class="mui-title">用户注册</h1>
 </header>
     <nav class="mui-bar mui-bar-tab my-footer">
     <a class="mui-tab-item" href="index.html">
@@ -62,18 +44,26 @@
     <div class="mui-content">
         <form class="mui-input-group">
             <div class="mui-input-row">
-                <label>用户名</label>
-                <input type="text" class="mui-input-clear" placeholder="请输入用户名" name="username">
+                <label>原密码</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入原密码" name="originPass">
             </div>
             <div class="mui-input-row">
-                <label>密码</label>
-                <input type="password" class="mui-input-password" placeholder="请输入密码" name="password">
+                <label>新密码</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入新密码" name="newPass">
+            </div>
+            <div class="mui-input-row">
+                <label>确认新密码</label>
+                <input type="password" class="mui-input-password" placeholder="请确认新密码" name="sureNewPass">
+            </div>
+            <div class="mui-input-row">
+                <label>认证码</label>
+                <input type="text" class="mui-input-clear" placeholder="认证码" name="vCode">
+                <span class="getCode" id="getCheckCode">获取认证码</span>
             </div>
             <div class="mui-button-row">
-                <button type="button" class="mui-btn mui-btn-primary" id="login-btn" >登录</button>
+                <button type="button" class="mui-btn mui-btn-primary" id="modify-btn">确认修改密码</button>
             </div>
         </form>
-        <a href="javascript:;" id="enroll">免费注册</a>
     </div>
 </body>
 </html>
